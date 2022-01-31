@@ -33,6 +33,21 @@ body{
     height: 80%
 }
 
+.voltar{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+}
+
+.voltar img{
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.voltar img:hover{
+    transform: scale(0.90);
+}
+
 .msg_contato{
     display: flex;
     flex-direction: column;
@@ -46,7 +61,7 @@ body{
     margin-top: 20px;
     font-size: clamp(2rem, 2vw, 3rem);
     height: auto;
-    
+    color: white;
 }
 
 .msg_contato p{
@@ -56,19 +71,10 @@ body{
     text-align: justify;
     margin-bottom: 10px;
     overflow-wrap: normal;
+    color: #f1f1f1;
+   
 }
 
-.vide1{
-    display: flex;
-    justify-content: left;
-    align-items:flex-end;
-    width: 80%;
-    height: auto;
-} 
-
-.vide1 h1{
-    margin-left: 10px;
-}
 
 .form_contato{
     display: flex;
@@ -98,6 +104,12 @@ body{
     margin-left: 10px;
 }
 
+.fils label{
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-left: 3%;
+}
+
 .fils input{
     background-color: #f1f1f1;
     border: none;
@@ -105,9 +117,10 @@ body{
     height: 5vh;
     outline: none;
     transform: translate(.3s);
-    padding-left: 10px;
+    padding-left:  20px;
     text-decoration: none;
     font-family: Ubuntu , sans-serif;
+    border-radius: 30px;
 }
 
 .fils input:hover{
@@ -130,6 +143,12 @@ body{
     width: 97.5%;
 }
 
+.formG3 label{
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-left: 3%;
+}
+
 .formG3 textarea{
     background-color: #f1f1f1;
     outline: none;
@@ -137,8 +156,9 @@ body{
     font-family: Ubuntu , sans-serif;
     font-weight: 500;
     font-size: 14px;
-    padding: 5px;
+    padding-left:  20px;
     border: none;
+    border-radius: 30px;
 }
 
 .btn_form{
@@ -150,17 +170,24 @@ body{
 
 .btn_form input{
     width: 70px;
-    height: 25px;
+    height: 35px;
     outline: none;
     border: none;
     cursor: pointer;
     transition: 0.3s linear;
     font-family: Ubuntu , sans-serif;
+    background-color: rgb(86, 71, 219);
+    box-shadow: 5px 5px 15px rgb(185, 36, 74);
+    color: #f1f1f1;
+    border-radius: 30px;
+    transition: 0.4s;
+    font-weight: bold;
 }
 
 .btn_form input:hover{
-    opacity: 0.85;
-    color: white;
+    /* opacity: 0.85; */
+    color: green;
+    transform: scale(0.90);
 }
 
 @media(max-width: 546px){
@@ -168,4 +195,24 @@ body{
         font-size: max(25px, 1rem);
         text-align: center;
     }
+}
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    width: 80%;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    width: 90%;
+    width: 80%;
 }

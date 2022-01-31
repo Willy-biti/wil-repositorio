@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family
+=Barlow+Condensed:wght@200&family=Merriweather:wght@300&family
+=Roboto+Mono:ital,wght@1,200&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/contato.css">
 </head>
 <body>
     <section id="contato_section">
         <div class="container">
             <div id="contato_contato">
+                <div class="voltar">
+                    <a href="/"><img src="../public/images/voltar.png" width="45px" alt=""></a>
+                </div>
                     <div class="msg_contato">
                         <h1>Entre em contato comigo</h1>
                         <p>
@@ -19,16 +29,18 @@
                             kfhudFJ~LDK KFÇhdfod luihfurif yUFOIHFOÇ  flujfhr klfuiflufk.hfksa
                         </p>
                     </div>
-                    <div class="vide1"><h1>Contato</h1></div>
+                    <div id='msgError'></div>
+                    <div id='msgSuccess'></div>
+
                     <div class="form_contato">
                             <form action="/contato" method="post" onsubmit="return mandar, mandar()" id="form">
                                 <div class="formGr1">
                                     <div class="fils">
                                         <label for="nome" id="labelNome">Nome</label>
-                                        <input type="text" name="nome" id="nome"> <br>
+                                        <input type="text" name="nome" id="nome" required> <br>
             
                                         <label for="email" id="labelEmail">Email</label>
-                                        <input type="text" name="email" id="email"><br>
+                                        <input type="text" name="email" id="email" required><br>
                                     </div><br>
             
                                 </div>
@@ -36,23 +48,25 @@
                                 <div class="formG2">
                                     <div class="fils">
                                         <label for="assunto" id="labelAssunto">Assunto</label>
-                                        <input type="text" name="assunto" id="assunto"><br>
+                                        <input type="text" name="assunto" id="assunto" required><br>
                                     </div>
                                 </div><br>
         
                                 <div class="formG3">
-                                    <label for="mensagem">Sua mensagem</label>
-                                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                                    <label for="mensagem" id="labelMensagem">Sua mensagem</label>
+                                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
                                 </div><br>
         
                                 <div class="btn_form">
-                                    <input type="submit" value="Enviar" onclick="mandar()">
+                                    <input type="submit" value="Enviar" onclick="mandar()" id="Enviar">
                                 </div><br>
                             </form>
                 </div>
             </div>
         </div>
     </section>
+
     
+    <script src="../public/js/contato.js"></script>
 </body>
 </html>

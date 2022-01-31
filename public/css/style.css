@@ -95,7 +95,7 @@ section{
     /* background: #e0d7d7; */
     margin: 3%;
     box-shadow: 5px 5px 15px #494c50;
-    border-radius: 4%;
+    border-radius: 30px;
     transition: 0.4s;
 }
 

@@ -4,8 +4,8 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-// const smtp = require('./config/sgMail');
-// const expressSanitizer = require('express-sanitizer');
+const smtp = require('./config/sgMail');
+const expressSanitizer = require('express-sanitizer');
 
 
 const app = express();
@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
-// app.use(expressSanitizer());
+app.use(expressSanitizer());
 
 app.use('/', routes);
 
