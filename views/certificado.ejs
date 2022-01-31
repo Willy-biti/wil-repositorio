@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title> 
+    <link rel="stylesheet" href="../public/css/certificado.css">
 </head>
 <body>
-    <H1>CETIFICADOS</H1>
+    <section id="slideshow">
+        <div class="container certi_slider">
+            <div class="header">
+                <h1>Certificados</h1>
+            </div>
+
+            <div class="slider">
+                <div class="slider--controls">
+                        <div class="slider--control" onclick="goPrev()">
+                            Ir</div>
+                        <div class="slider--control" onclick="goNext()">
+                        Voltar</div>
+                </div>
+                
+                <div class="fond_slider">
+                    <div class="slider--width">
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado1_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado2_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado3_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado4_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado5_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado6_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado7_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado8_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado9_page-0001.jpg);"></div>
+                        <div class="slider--item" style="background-image: url(../public/images/slides/certificado10_page-0001.jpg);"></div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../public/js/certificado.js"></script>
 </body>
 </html>
