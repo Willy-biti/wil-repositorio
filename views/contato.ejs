@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title> 
+    <link rel="stylesheet" href="../public/css/contato.css">
 </head>
 <body>
-    <H1>CONTATOS</H1>
+    <section id="contato_section">
+        <div class="container">
+            <div id="contato_contato">
+                    <div class="msg_contato">
+                        <h1>Entre em contato comigo</h1>
+                        <p>
+                            kflhksfgkjf kjhjfçgf jhjfksdlahfçsag ljhçjfaflkgh kflhksfgkjf 
+                            kjhjfçgf jhjfksdlahfçsag ljhçjfaflkf jhçfhsgakl sflsdfuoçsf fhçdhf
+                            kfhudFJ~LDK KFÇhdfod luihfurif yUFOIHFOÇ  flujfhr klfuiflufk.hfksa
+                        </p>
+                    </div>
+                    <div class="vide1"><h1>Contato</h1></div>
+                    <div class="form_contato">
+                            <form action="/contato" method="post" onsubmit="return mandar, mandar()" id="form">
+                                <div class="formGr1">
+                                    <div class="fils">
+                                        <label for="nome" id="labelNome">Nome</label>
+                                        <input type="text" name="nome" id="nome"> <br>
+            
+                                        <label for="email" id="labelEmail">Email</label>
+                                        <input type="text" name="email" id="email"><br>
+                                    </div><br>
+            
+                                </div>
+        
+                                <div class="formG2">
+                                    <div class="fils">
+                                        <label for="assunto" id="labelAssunto">Assunto</label>
+                                        <input type="text" name="assunto" id="assunto"><br>
+                                    </div>
+                                </div><br>
+        
+                                <div class="formG3">
+                                    <label for="mensagem">Sua mensagem</label>
+                                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                                </div><br>
+        
+                                <div class="btn_form">
+                                    <input type="submit" value="Enviar" onclick="mandar()">
+                                </div><br>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>

@@ -5,7 +5,9 @@
 }
 
 body{
-    background-color: #2f3136;
+    /* background-image: linear-gradient(120deg, #274c87, #e61728); */
+    background-image: linear-gradient(90deg, rgb(57, 80, 211), rgb(202, 36, 36));
+    font-family: Ubuntu , sans-serif;
 }
 
 header{
@@ -40,7 +42,7 @@ header{
     background-position: center;
     background-size: cover;
     border-radius: 100%;
-    border: 2px solid rgb(172, 6, 6);
+    border: 4px solid rgb(223, 11, 11);
 }
 
 #nom{
@@ -55,6 +57,7 @@ header{
 #nom h1{
     color: white;
     margin-top: 5px;
+    letter-spacing: 3px;
 }
 
 section{
@@ -88,10 +91,17 @@ section{
     justify-content: center;
     align-items: center;
     flex: 1;
-    background: #202225;
-    margin: 1%;
-    box-shadow: 1px 1px 2px #202225;
+    background-image: linear-gradient(-90deg, white, white);
+    /* background: #e0d7d7; */
+    margin: 3%;
+    box-shadow: 5px 5px 15px #494c50;
     border-radius: 4%;
+    transition: 0.4s;
+}
+
+.card:hover{
+    background-image: linear-gradient(-90deg, rgb(57, 80, 211), rgb(202, 36, 36));
+    color: white;
 }
 
 .cards a{
@@ -105,11 +115,12 @@ section{
 
 .cards a:hover{
     transform: scale(0.95);
+    color: white;
 }
 
 .card h1{
     text-align: center;
-    color: white;
+    color: #3e32a8;
     letter-spacing: 5px;
     font-size: 18px;
     transition: 0.2s;
@@ -117,6 +128,7 @@ section{
 
 .card h1:hover{
     transform: scale(0.95);
+    color: white;
 }
 
 
@@ -131,8 +143,3 @@ section{
     background-position: center;
     background-size: cover;
 } */
-
-footer{
-    display: flex;
-    height: 10vh;
-}
