@@ -86,6 +86,11 @@ function mandar() {
     msgError.setAttribute('style', 'display: none')
     msgError.innerHTML = ''
 
+    // setInterval(msgSuccess, 6000)
+    setTimeout(()=>{
+        msgSuccess
+    }, 6000)
+
     } else{
         msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = '<strong>Preencha todos os campos corretamente antes de enviar</strong>'
