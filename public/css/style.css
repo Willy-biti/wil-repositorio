@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2f3136;
+}
+
+header{
+    display: flex;
+    height: 35vh;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profil{
+    display: flex;
+    width: 10%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/eu.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    border: 2px solid rgb(172, 6, 6);
+}
+
+#nom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+}
+
+#nom h1{
+    color: white;
+    margin-top: 5px;
+}
+
+section{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.corps{
+    display: flex;
+    width: 40vw;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: #202225; */
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: #202225;
+    margin: 1%;
+    box-shadow: 1px 1px 2px #202225;
+    border-radius: 4%;
+}
+
+.cards a{
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cards a:hover{
+    transform: scale(0.95);
+}
+
+.card h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.card h1:hover{
+    transform: scale(0.95);
+}
+
+
+/* #eu{
+    background-image: linear-gradient(rgba(0, 0, 0, .50) , rgba(0, 0, 0, .50)100%), url(../images/eu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#git{
+    background-image: linear-gradient(rgba(0, 0, 0, .50) , rgba(0, 0, 0, .50)100%), url(../images/github.png);
+    background-position: center;
+    background-size: cover;
+} */
+
+footer{
+    display: flex;
+    height: 10vh;
+}
