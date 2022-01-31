@@ -143,3 +143,8 @@ section{
     background-position: center;
     background-size: cover;
 } */
+
+footer{
+    display: flex;
+    height: 10vh;
+}
