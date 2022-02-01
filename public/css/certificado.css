@@ -75,6 +75,7 @@ body{
     border-radius: 50%;
     display: flex;
     cursor: pointer;
+    margin: 15px;
 }
 
 .fond_slider{
@@ -97,4 +98,18 @@ body{
     width: 14%;
     background-position: center;
     background-size: cover;
+}
+
+@media(min-width: 1350px){
+.slider--item img{
+    width: 1400px;
+    height: 600px;
+}
+}
+
+@media(max-width: 1000px){
+    .slider--item img{
+        width: 1000px;
+        height: 450px;
+    }
 }
