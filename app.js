@@ -30,9 +30,9 @@ app.use('/', routes);
 
 
 
-const PORT = 4001
+const PORT = process.env.PORT || 4001
 app.listen(PORT, () => {
-    console.log('Server levantado...')
+    console.log(`Aplicação rodando em http://localhost:${PORT}`)
 })
 
 

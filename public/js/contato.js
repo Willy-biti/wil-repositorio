@@ -88,7 +88,7 @@ function mandar() {
 
     // setInterval(msgSuccess, 6000)
     setTimeout(()=>{
-        msgSuccess
+        window.location.href = "http://localhost:4001/contato"
     }, 6000)
 
     } else{
