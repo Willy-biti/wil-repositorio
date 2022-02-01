@@ -29,3 +29,24 @@ document.querySelector('.slider--width').style.width = `calc(100% * ${totalSlide
     }
     
     setInterval(goNext, 6000);
+
+
+    // BOTÃO SCROLL
+function subirTela(){
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    })
+}
+
+function decidirBotaoScroll(){
+    if(window.scrollY ===0 ) {
+        //ocultar botão
+        document.querySelector('.scrollbotton').style.display = 'none';
+    } else {
+        //mostrar botão
+        document.querySelector('.scrollbotton').style.display = 'block';
+    }
+}
+
+window.addEventListener('scroll', decidirBotaoScroll);

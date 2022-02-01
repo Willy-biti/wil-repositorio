@@ -52,6 +52,7 @@ header{
     position: fixed;
     top: 5vh;
     left: 5vw;
+    z-index: 9999;
 }
 
 .voltar img{
@@ -160,6 +161,16 @@ section{
 @media(max-width: 490px){
     .header h1{
         text-align: center;
+    }
+}
+
+@media(max-width: 490px){
+    .header h1{
+        text-align: center;
+    }
+
+    .corps{
+        width: 90vw;
     }
 }
 
