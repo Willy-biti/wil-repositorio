@@ -31,6 +31,13 @@ header{
     align-items: center;
 }
 
+.profil h1{
+    /* color: #f1f1f1; */
+    color: #3e32a8;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
 .voltar{
     position: fixed;
     top: 5vh;
@@ -78,7 +85,8 @@ section{
     justify-content: center;
     align-items: center;
     flex: 1;
-    background-image: linear-gradient(-90deg, white, white);
+    /* background-image: linear-gradient(-90deg, white, white); */
+    background-image: linear-gradient(-90deg, rgb(57, 80, 211), rgb(202, 36, 36));
     /* background: #e0d7d7; */
     margin: 3%;
     box-shadow: 5px 5px 15px #494c50;
@@ -87,7 +95,7 @@ section{
 }
 
 .card:hover{
-    background-image: linear-gradient(-90deg, rgb(57, 80, 211), rgb(202, 36, 36));
+    
     color: white;
 }
 
@@ -109,7 +117,7 @@ section{
     text-align: center;
     color: #3e32a8;
     letter-spacing: 5px;
-    font-size: 18px;
+    font-size: 24px;
     transition: 0.2s;
 }
 
@@ -118,18 +126,114 @@ section{
     color: white;
 }
 
+.html, .css, .js, .git, .nodejs, .sql{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    /* background-image: url(../images/tecn/html.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    */
+} 
+.imgHtml, .imgcss, .imgjs, .imggit, .imgnodejs, .imgsql{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+/* 
+#css{
+    background-image: url(../images//tecn/css.png);
+    background-position: center;
+    background-size: cover;
+}
 
-/* #eu{
-    background-image: linear-gradient(rgba(0, 0, 0, .50) , rgba(0, 0, 0, .50)100%), url(../images/eu.jpg);
+#js{
+    background-image: url(../images//tecn/js.png);
     background-position: center;
     background-size: cover;
 }
 
 #git{
-    background-image: linear-gradient(rgba(0, 0, 0, .50) , rgba(0, 0, 0, .50)100%), url(../images/github.png);
+    background-image: url(../images//tecn/git.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#nodejs{
+    background-image: url(../images//tecn/nodejs.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#sql{
+    background-image: url(../images//tecn/sql.png);
     background-position: center;
     background-size: cover;
 } */
+
+
+@media(max-width: 999px){
+    .corps{
+        width: 50vw;
+    }
+}
+
+@media(max-width: 811px){
+    .corps{
+        width: 60vw;
+    }
+}
+
+@media(max-width: 662px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profil h1{
+        font-size: 50px;
+    }
+}
+
+
+@media(max-width: 441px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .corps{
+        width: 80vw;
+    }
+
+    .card h1{
+        font-size: 20px;
+    }
+
+    .profil h1{
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width: 300px){
+    .corps{
+        width: 80vh;
+    }
+
+    .card h1{
+        font-size: 18px;
+    }
+
+}
+
+
+
 
 footer{
     display: flex;

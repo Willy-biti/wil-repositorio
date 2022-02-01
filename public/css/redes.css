@@ -109,6 +109,15 @@ section{
     color: white;
 }
 
+.eu, .face, .wpp, .git, .linkedin, .contact{
+    display: flex;
+}
+
+.eu h1, .face h1, .wpp h1, .git h1, .linkedin h1, .contact h1{
+    margin-left: 10px;
+}
+
+
 .cards a{
     display: flex;
     flex: 1;
@@ -136,6 +145,23 @@ section{
     color: white;
 }
 
+@media(max-width: 1000px){
+    .corps{
+        width: 50vw;
+    }
+}
+
+@media(max-width: 650px){
+    .corps{
+        width: 60vw;
+    }
+}
+
+@media(max-width: 490px){
+    .header h1{
+        text-align: center;
+    }
+}
 
 footer{
     display: flex;

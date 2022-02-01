@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const sgMail = require('../config/sgMail');
 const valid = require('../models/ctrl');
+const formSchema = require('../models/validation');
+const validation = require('../models/validation')
 // const cadForm = ('../models/cadForm.js')
 
 router.get('/', function (req, res) {
@@ -29,16 +31,13 @@ router.get('/redes', function (req, res) {
 })
 
 router.get('/contato', function (req, res) {
-    let valid;
-    if(valid == false){
-        res.redirect('/contato')
-    } else{
         res.render('contato', { title: 'Contato' })
-    }
-    
 })
 
 router.post('/contato', async function (req, res) {
+
+    formSchema.validate();
+
     const { to, subject, text, html } = req.body;
 
     let { nome, email, assunto, mensagem } = req.body;

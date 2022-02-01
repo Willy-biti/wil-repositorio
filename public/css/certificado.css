@@ -30,13 +30,13 @@ body{
 }
 
 .header h1{
-    font-size: 40px;
+    font-size: 60px;
     margin: 0;
     padding: 0;
     text-align: center;
-    color: rgb(36, 31, 31);
+    color: #f1f1f1;
     text-shadow: 1px 2px 0 #555;
-    
+    letter-spacing: 3px;
 }
 
 .voltar{

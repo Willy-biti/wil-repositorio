@@ -205,10 +205,38 @@ body{
     background-color: #f1f1f1;
 }
 
+@media(max-width: 1050px){
+    .container{
+        width: 80vw;
+    }
+}
+
+@media(max-width: 715px){
+    .form_contato{
+        width: 100%;
+    }
+
+    .msg_contato{
+        width: 100%;
+    }
+    .msg_contato p{
+        width: 100%;
+    }
+
+    .msg_contato h1{
+        text-align: center;
+    }
+}
+
 @media(max-width: 546px){
     .msg_contato h1{
-        font-size: max(25px, 1rem);
         text-align: center;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        width: 90vw;
     }
 }
 #msgError{

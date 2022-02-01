@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const smtp = require('./config/sgMail');
 const expressSanitizer = require('express-sanitizer');
+const yup = require('yup')
 
 
 const app = express();
