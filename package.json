@@ -1,0 +1,33 @@
+{
+  "name": "meuportfolio",
+  "version": "1.0.0",
+  "description": "\"Meu portfólio\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "\"Willy Biti\"",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@sendgrid/mail": "^7.6.0",
+    "await": "^0.2.6",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.3",
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-sanitizer": "^1.0.6",
+    "joi": "^17.6.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "sequelize": "^6.15.0",
+    "serve-favicon": "^2.5.0",
+    "yup": "^0.32.11"
+  }
+}
