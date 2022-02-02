@@ -131,9 +131,10 @@ section{
     color: white;
 }
 
+
 @media(max-width: 1495px){
     #profil{
-        width: 13%;
+        width: 10%;
     }
 }
 
