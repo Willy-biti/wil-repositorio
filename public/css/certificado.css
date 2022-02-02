@@ -72,7 +72,6 @@ section{
 .slide{
     display: flex;
     width: 80vw;
-    background-color: cyan;
 }
 
 #slde1{
