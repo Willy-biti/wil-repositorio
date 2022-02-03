@@ -3,7 +3,8 @@ const router = express.Router();
 const sgMail = require('../config/sgMail');
 const valid = require('../models/ctrl');
 const formSchema = require('../models/validation');
-const validation = require('../models/validation')
+const validation = require('../models/validation');
+const msgForm = require('../models/msgForm');
 // const cadForm = ('../models/cadForm.js')
 
 router.get('/', function (req, res) {
@@ -36,7 +37,14 @@ router.get('/contato', function (req, res) {
 
 router.post('/contato', async function (req, res) {
 
-    formSchema.validate();
+    // formSchema.validate();
+
+    msgForm.create({
+        nome: req.body.nome,
+        email: req.body.email,
+        assunto: req.body.assunto,
+        mensagem: req.body.mensagem
+    })
 
     const { to, subject, text, html } = req.body;
 
