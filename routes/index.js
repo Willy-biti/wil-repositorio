@@ -39,12 +39,12 @@ router.post('/contato', async function (req, res) {
 
     // formSchema.validate();
 
-    msgForm.create({
-        nome: req.body.nome,
-        email: req.body.email,
-        assunto: req.body.assunto,
-        mensagem: req.body.mensagem
-    })
+    // msgForm.create({
+    //     nome: req.body.nome,
+    //     email: req.body.email,
+    //     assunto: req.body.assunto,
+    //     mensagem: req.body.mensagem
+    // })
 
     const { to, subject, text, html } = req.body;
 
