@@ -37,7 +37,7 @@ router.get('/contato', function (req, res) {
 
 router.post('/contato', async function (req, res) {
 
-    formSchema.validate();
+    // formSchema.validate();
 
     msgForm.create({
         nome: req.body.nome,

@@ -11,7 +11,7 @@ const msgForm = db.sequelize.define('formPortf', {
         type: db.Sequelize.STRING
     },
     mensagem: {
-        type: db.Sequelize.STRING
+        type: db.Sequelize.TEXT
     }
 })
 
