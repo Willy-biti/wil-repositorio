@@ -69,9 +69,9 @@ router.post('/contato', async function (req, res) {
 
     try {
         await sgMail.send(msg)
-        console.log("Good")
+        console.log("Super cool")
     } catch (err) {
-        console.log("fudeu")
+        console.log("Pas cool")
         return res.status(err.code).send(err.message);
     }
     res.redirect('/contato')
