@@ -194,6 +194,42 @@ section{
     box-shadow: 5px 5px 15px #4e79b1;
 }
 
+#slde11{
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    background-image: url(../images/slides/certRe_page-0001.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #4e79b1;
+}
+
+#slde12{
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    background-image: url(../images/slides/certRe1_page-0001.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #4e79b1;
+}
+
+#slde13{
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    background-image: url(../images/slides/certRe2_page-0001\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #4e79b1;
+}
+
 .scrollbotton{
     display: flex;
     justify-content: center;

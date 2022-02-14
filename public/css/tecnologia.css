@@ -126,7 +126,7 @@ section{
     color: white;
 }
 
-.html, .css, .js, .git, .nodejs, .sql{
+.html, .css, .js, .git, .nodejs, .sql, .react, .gitgit{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,12 +139,15 @@ section{
     border-radius: 30px;
     */
 } 
-.imgHtml, .imgcss, .imgjs, .imggit, .imgnodejs, .imgsql{
+
+.imgHtml, .imgcss, .imgjs, .imggit, .imgnodejs, .imgsql, .imgReact, .imgGitgit{
     display: flex;
     justify-content: center;
     width: 80%;
     height: 80%;
 }
+
+
 /* 
 #css{
     background-image: url(../images//tecn/css.png);
