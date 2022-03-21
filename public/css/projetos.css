@@ -131,6 +131,8 @@ section{
     align-items: center;
     width: 90%;
     height: 40%;
+    background-color: #f1f1f1;
+    border-radius: 9px;
 }
 
 .imgcard img{
