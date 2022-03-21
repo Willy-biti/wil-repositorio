@@ -11,8 +11,8 @@ router.get('/', function (req, res) {
     res.render('index', { title: 'Willy B. Biti' })
 })
 
-router.get('/sobre', function (req, res) {
-    res.render('eu', { title: 'Sobre Willy' })
+router.get('/projetos', function (req, res) {
+    res.render('projetos', { title: 'projetos' })
 })
 
 router.get('/repositorios', function (req, res) {
